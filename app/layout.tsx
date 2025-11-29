@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
-
+import SmoothScroll from "@/component/SmoothScroll";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nootrio",
-  description: "Nootrio is a food-first blog that explores the pros and cons of common foods so you can make smarter choices about what you eat.",
+  description:
+    "Nootrio is a food-first blog that explores the pros and cons of common foods so you can make smarter choices about what you eat.",
 };
 
 export default function RootLayout({
@@ -30,9 +31,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />        
-        {children}
+        <SmoothScroll>
+          <Navbar />
+          {children}
           <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
