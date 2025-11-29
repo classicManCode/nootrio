@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 const Navbar = () => {
   return (
     // if not "fixed" then add "absolute"
-    <div className="flex justify-center items-center fixed w-full top-4 z-50"> 
+    <header className="flex justify-center items-center fixed w-full top-4 z-50"> 
       <nav className="flex items-center justify-between w-[65%]">
         <Link href="/">LOGO</Link>
         <ul className="flex gap-8 items-center py-5 rounded-full px-10 bg-teal-800/40 backdrop-blur-[10px]">
@@ -50,7 +50,7 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

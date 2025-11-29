@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Navbar from "@/component/Navbar";
 import Hero from "@/component/Hero";
+import Home from "@/component/home/Home";
 
-
-const Page = () => {
+const HomePage = () => {
   return (
-    <main className="relative h-screen w-full">
-      <Navbar />
-      <Hero />
+    <main className="">
+      <Home />
     </main>
   );
 };
 
-export default Page;
+export default HomePage;
