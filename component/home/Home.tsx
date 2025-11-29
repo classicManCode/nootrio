@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "@/component/Hero";
 import { MdVerified } from "react-icons/md";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Home = () => {
   return (
@@ -87,11 +88,38 @@ const Home = () => {
                   <MdOutlineArrowOutward className="text-xl font-extrabold" />
                 </a>
           </div>
-          <div className="w-[50%] h-full bg-black">
+          <div className="w-[50%] h-full bg-black flex flex-col gap-4">
+            <a href="" className="w-[70%] flex flex-col bg-amber-300 px-4 py-2 rounded-xl border">
+              <h3>Healthy food swaps</h3>
+              <p>Easy alternatives that still fit your lifestyle.</p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </a>
             <a href="" className="w-[70%] flex flex-col">
-              <h3></h3>
-              <p></p>
-              <div></div>
+              <h3>Meal breakdowns</h3>
+              <p>Simple explanations of what&apos;s inside your meals.</p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </a>
+            <a href="" className="w-[70%] flex flex-col">
+              <h3>Simple nutrition guides</h3>
+              <p>Short guides to help you eat better without stress.</p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </a>
+            <a href="" className="w-[70%] flex flex-col">
+              <h3>Personalized Q&A</h3>
+              <p>Answers to common food and health questions in plain language.</p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
             </a>
           </div>
         </div>
