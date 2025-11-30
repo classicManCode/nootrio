@@ -75,7 +75,9 @@ const Home = () => {
       <section className="bg-green-700 h-[80vh] flex items-center justify-center gap-4">
         <div className="bg-black w-[80%] h-[80%] flex">
           <div className="w-[50%] h-full bg-white flex flex-col gap-4 ">
-            <h2>Services</h2>
+            <h2 className="border border-white py-2 px-3 rounded-full">
+              Services
+            </h2>
             <h3>Yes, we know we can help you</h3>
             <p>Here are the services we can offer</p>
             <a
@@ -138,48 +140,84 @@ const Home = () => {
       </section>
 
       <section className="bg-white h-[80vh] w-full flex flex-col items-center justify-center">
-        <div className="w-[80%] h-[80%] bg-black flex flex-col gap-6 p-2 items-center justify-center">
-          <h2>Blog</h2>
+        <div className="w-[80%] h-[80%] bg-black flex flex-col gap-6 items-center justify-center">
+          <h2 className="border border-white py-2 px-3 rounded-full">Blog</h2>
           <p>
             Read our latest blog posts for tips and insights on healthy eating.
           </p>
           <div className="grid grid-cols-3 gap-4 p-2">
             <article className="flex flex-col gap-4  items-start">
               <div className="w-full h-64 overflow-hidden">
-                <Image src="/images/blog-1.jpg" alt="Blog Image" width={600} height={600} loading="lazy" className="w-full h-full object-cover"  />
+                <Image
+                  src="/images/blog-1.jpg"
+                  alt="Blog Image"
+                  width={600}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              
-              <h3>5 Filling Breakfast Ideas</h3>
-              <p>Easy breakfast ideas using normal foods that help people stay full till later in the day.</p>
-              <div className="flex items-center gap-2 underline w-fit">
-                <span>Learn more</span>
-                <FaArrowRightLong />
-              </div>
-            </article>
-            <article className="flex flex-col gap-4">
-              <div className="w-full h-64 overflow-hidden">
-                <Image src="/images/blog-2.jpg" alt="Blog Image" width={600} height={600} loading="lazy" className="w-full h-full object-cover"  />
-              </div>
-              <h3>5 Filling Breakfast Ideas</h3>
-              <p>Easy breakfast ideas using normal foods that help people stay full till later in the day.</p>
-              <div className="flex items-center gap-2 underline w-fit">
-                <span>Learn more</span>
-                <FaArrowRightLong />
-              </div>
-            </article>
-            <article className="flex flex-col gap-4">
-              <div className="w-full h-64 overflow-hidden">
-                <Image src="/images/blog-3.jpg" alt="Blog Image" width={600} height={600} loading="lazy" className="w-full h-full object-cover"  />
-              </div>
-              <h3>5 Filling Breakfast Ideas</h3>
-              <p>Easy breakfast ideas using normal foods that help people stay full till later in the day.</p>
-              <div className="flex items-center gap-2 underline w-fit">
-                <span>Learn more</span>
-                <FaArrowRightLong />
-              </div>
-            </article>
 
+              <h3>5 Filling Breakfast Ideas</h3>
+              <p>
+                Easy breakfast ideas using normal foods that help people stay
+                full till later in the day.
+              </p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </article>
+            <article className="flex flex-col gap-4">
+              <div className="w-full h-64 overflow-hidden">
+                <Image
+                  src="/images/blog-2.jpg"
+                  alt="Blog Image"
+                  width={600}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3>Healthy Eating on a Budget</h3>
+              <p>
+                Helping people pick snacks that do not spike their sugar and
+                make them feel lazy or guilty.
+              </p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </article>
+            <article className="flex flex-col gap-4">
+              <div className="w-full h-64 overflow-hidden">
+                <Image
+                  src="/images/blog-3.jpg"
+                  alt="Blog Image"
+                  width={600}
+                  height={600}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3>Better Snack Choices</h3>
+              <p>
+                Show people they do not need expensive “fitness foods” to eat
+                healthy.
+              </p>
+              <div className="flex items-center gap-2 underline w-fit">
+                <span>Learn more</span>
+                <FaArrowRightLong />
+              </div>
+            </article>
           </div>
+          <a
+            href="/contact"
+            className="flex items-center justify-center bg-white hover:bg-green-800/60 hover:text-lime-300 text-stone-700 gap-2 hover:gap-3 py-2 px-4 hover:-translate-y-0.5 transition-all duration-500 hover:scale-103 font-semibold rounded-full"
+          >
+            <span>Contact Us</span>
+            <MdOutlineArrowOutward className="text-xl font-extrabold" />
+          </a>
         </div>
       </section>
     </main>
