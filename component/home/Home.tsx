@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Hero from "@/component/Hero";
 import { MdVerified } from "react-icons/md";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -174,7 +175,10 @@ const Home = () => {
             Read our latest blog posts for tips and insights on healthy eating.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 p-2 w-full">
-            <article className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl">
+            <Link
+              href="/blog/5-filling-breakfast-ideas"
+              className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl hover:shadow-lg transition-shadow duration-300"
+            >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <Image
                   src="/images/blog-1.jpg"
@@ -198,8 +202,11 @@ const Home = () => {
                   <FaArrowRightLong />
                 </div>
               </div>
-            </article>
-            <article className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl">
+            </Link>
+            <Link
+              href="/blog/healthy-eating-on-a-budget"
+              className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl hover:shadow-lg transition-shadow duration-300"
+            >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <Image
                   src="/images/blog-2.jpg"
@@ -223,8 +230,11 @@ const Home = () => {
                   <FaArrowRightLong />
                 </div>
               </div>
-            </article>
-            <article className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl">
+            </Link>
+            <Link
+              href="/blog/better-snack-choices"
+              className="flex flex-col gap-3 md:gap-4 border overflow-hidden border-black/10 items-start rounded-2xl hover:shadow-lg transition-shadow duration-300"
+            >
               <div className="w-full h-48 md:h-56 lg:h-64 overflow-hidden">
                 <Image
                   src="/images/blog-3.jpg"
@@ -240,14 +250,14 @@ const Home = () => {
                   Better Snack Choices
                 </h3>
                 <p className="text-sm md:text-base">
-                  Show people they do not need expensive &quots;fitness foods&quots; to eat healthy.
+                  Show people they do not need expensive &quot;fitness foods&quot; to eat healthy.
                 </p>
                 <div className="flex items-center gap-2 underline w-fit text-sm md:text-base">
                   <span>Learn more</span>
                   <FaArrowRightLong />
                 </div>
               </div>
-            </article>
+            </Link>
           </div>
           <a
             href="/contact"
