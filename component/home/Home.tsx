@@ -9,7 +9,7 @@ const Home = () => {
     // use overflow-hidden for hero
     <main>
       <Hero />
-      <section className="h-[80vh] w-full bg-white flex items-center justify-center">
+      <section id="about" className="h-[80vh] w-full bg-white flex items-center justify-center">
         <div className="flex items-center justify-center overflow-hidden h-full w-[80vw]">
           <div className="bg-white w-[50%] h-[80%] flex itmes-center justify-center">
             <div className="flex items-center justify-center h-auto min-w-[70%] w-fit ">
@@ -72,7 +72,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="h-[80vh] bg-emerald-900 flex items-center justify-center gap-4">
+      <section id="services" className="h-[80vh] bg-emerald-900 flex items-center justify-center gap-4">
         <div className=" text-black w-[80%] h-[80%] flex">
           <div className="w-[50%] h-full flex flex-col gap-4 text-white">
             <h2 className="border border-white/20 py-2 px-3 text-white bg-white/10 rounded-full w-fit">

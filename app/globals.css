@@ -4,6 +4,9 @@
   --background: hsl(20, 6%, 90%);
   --foreground: hsl(0, 0%, 9%);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @theme inline {
   --color-background: var(--background);

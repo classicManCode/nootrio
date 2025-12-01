@@ -18,19 +18,16 @@ const Navbar = () => {
                     /></Link>
         <ul className="flex gap-8 items-center py-5 rounded-full px-10 bg-teal-800/40 backdrop-blur-[10px]">
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/services">Services</Link>
+            <a href="#about">About</a>
           </li>
           <li>
             <Link href="/blog">Blog</Link>
           </li>
           <li>
-            <Link href="/services">Services</Link>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         <div className="flex gap-4">

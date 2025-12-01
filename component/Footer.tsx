@@ -9,7 +9,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <>
-      <section className='relative h-[50vh] w-full bg-[url("/images/contact-hero.jpg")] bg-cover bg-center '>
+      <section id="contact" className='relative h-[50vh] w-full bg-[url("/images/contact-hero.jpg")] bg-cover bg-center '>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-50 flex flex-col h-full items-center justify-center gap-6">
           <h2>Let&apos;s get to know you</h2>
