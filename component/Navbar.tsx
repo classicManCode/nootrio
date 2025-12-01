@@ -2,13 +2,20 @@ import Link from "next/link";
 import { FaThreads } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 const Navbar = () => {
   return (
     // if not "fixed" then add "absolute"
-    <header className="flex justify-center items-center fixed w-full top-4 z-50"> 
+    <header className="flex justify-center items-center fixed w-full top-4 z-9999"> 
       <nav className="flex items-center justify-between w-[65%]">
-        <Link href="/">LOGO</Link>
+        <Link href="/"><Image
+                      src="/images/logo.png"
+                      alt="Logo"
+                      width={100}
+                      height={100}
+                      className="w-20 h-20"
+                    /></Link>
         <ul className="flex gap-8 items-center py-5 rounded-full px-10 bg-teal-800/40 backdrop-blur-[10px]">
           <li>
             <Link href="/">Home</Link>
