@@ -100,7 +100,7 @@ const Navbar = () => {
         )}
 
         {/* Desktop Social Icons */}
-        <div className="hidden lg:flex gap-4">
+        <div className="hidden md:flex gap-4">
           <a
             href="https://www.threads.com/@jiggybenn"
             target="_blank"
