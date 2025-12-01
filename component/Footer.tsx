@@ -52,13 +52,13 @@ const Footer = () => {
               </h2>
               <ul className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                 <li>
-                  <Link href="/services">Services</Link>
+                  <Link href="#about">About</Link>
                 </li>
                 <li>
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-                  <Link href="/services">Services</Link>
+                  <Link href="#services">Services</Link>
                 </li>
               </ul>
             </div>
