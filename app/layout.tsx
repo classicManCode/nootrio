@@ -16,9 +16,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nootrio",
+  title: {
+    default: "Nootrio Health Blog",
+    template: "%s - Nootrio"
+  },
   description:
     "Nootrio is a food-first blog that explores the pros and cons of common foods so you can make smarter choices about what you eat.",
+  twitter: {
+    card: "summary_large_image",
+  }
 };
 
 export default function RootLayout({
