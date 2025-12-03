@@ -66,7 +66,7 @@ const Home = () => {
                   </div>
                   <a
                     href="/contact"
-                    className="flex items-center justify-center bg-white hover:bg-green-800/60 hover:text-lime-300 text-stone-700 gap-2 hover:gap-3 py-2 px-3 md:px-4 hover:-translate-y-0.5 transition-all duration-500 hover:scale-103 font-semibold rounded-full text-sm md:text-base"
+                    className="flex items-center justify-center bg-stone-800 hover:bg-green-800/60 hover:text-lime-300 text-white gap-2 hover:gap-3 py-2 px-3 md:px-4 hover:-translate-y-0.5 transition-all duration-500 hover:scale-103 font-semibold rounded-full text-sm md:text-base"
                   >
                     <span>Contact Us</span>
                     <MdOutlineArrowOutward className="text-lg md:text-xl font-extrabold" />
@@ -261,7 +261,7 @@ const Home = () => {
           </div>
           <a
             href="/contact"
-            className="flex items-center justify-center bg-white hover:bg-green-800/60 hover:text-white text-stone-700 gap-2 hover:gap-3 py-2 px-3 md:px-4 hover:-translate-y-0.5 transition-all duration-500 hover:scale-103 font-semibold rounded-full text-sm md:text-base"
+            className="flex items-center justify-center bg-stone-800 hover:bg-green-800/60 hover:text-white text-white gap-2 hover:gap-3 py-2 px-3 md:px-4 hover:-translate-y-0.5 transition-all duration-500 hover:scale-103 font-semibold rounded-full text-sm md:text-base"
           >
             <span>Contact Us</span>
             <MdOutlineArrowOutward className="text-lg md:text-xl font-extrabold" />
