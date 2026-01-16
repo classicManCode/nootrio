@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Hero from "@/component/Hero";
+import Hero from "@/components/Hero";
 import { MdVerified } from "react-icons/md";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -250,7 +250,8 @@ const Home = () => {
                   Better Snack Choices
                 </h3>
                 <p className="text-sm md:text-base">
-                  Show people they do not need expensive &quot;fitness foods&quot; to eat healthy.
+                  Show people they do not need expensive &quot;fitness
+                  foods&quot; to eat healthy.
                 </p>
                 <div className="flex items-center gap-2 underline w-fit text-sm md:text-base">
                   <span>Learn more</span>
